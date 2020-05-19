@@ -3,7 +3,8 @@ $(document).ready(function(){
     var template = Handlebars.compile(source);
 
     var context = {
-        'classe': "box"
+        'classe': "box",
+        'classe_p':'centered'
     };
 
     var html = template(context);
