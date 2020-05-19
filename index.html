@@ -2,12 +2,19 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Quadrati Ajax</title>
         <link rel="stylesheet" href="style.css">
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     </head>
     <body>
+        <div id="griglia"></div>
+        <script id="template" type="text/x-handlebars-template">
+            <div class="{{classe}}">
+                <p class='centered'></p>
+            </div>
+        </script>
         <script src="main.js" charset="utf-8"></script>
     </body>
 </html>
