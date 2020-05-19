@@ -21,13 +21,15 @@ $(document).ready(function(){
                 console.log(data);
                 $(this).find('.centered').append(data.response)
                 if (data.response <= 5) {
-                    $(this).addClass('yellow')
+                    $(this).addClass('yellow');
+                    $(this).find('.centered').addClass('yellow');
                 } else {
-                    $(this).addClass('green')
+                    $(this).addClass('green');
+                    $(this).find('.centered').addClass('green');
                 }
             },
             'error': function() {
-                alert('errore risontrato!')
+                alert('errore risontrato!');
             }
         })
     })
