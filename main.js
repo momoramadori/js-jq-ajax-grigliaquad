@@ -13,6 +13,8 @@ $(document).ready(function(){
     }
 
     $('.box').one('click',function(){
+        //commentato abbiamo il metodo alternativo
+        // var that = this;
         $.ajax({
             'url':'https://flynn.boolean.careers/exercises/api/random/int',
             'context':this,
@@ -21,9 +23,13 @@ $(document).ready(function(){
                 console.log(data);
                 $(this).find('.centered').append(data.response)
                 if (data.response <= 5) {
+                    // $(that).addClass('yellow')
+                    // $(that).find('.centered').addClass('yellow');
                     $(this).addClass('yellow');
                     $(this).find('.centered').addClass('yellow');
                 } else {
+                    // $(that).addClass('green')
+                    // $(that).find('.centered').addClass('green');
                     $(this).addClass('green');
                     $(this).find('.centered').addClass('green');
                 }
