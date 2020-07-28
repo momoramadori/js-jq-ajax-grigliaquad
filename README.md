@@ -1,1 +1,1 @@
-js-jq-ajax-grigliaquad
+#29 : Generazione griglia tramite chiamata AJAX
